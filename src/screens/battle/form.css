@@ -1,0 +1,35 @@
+main form {
+	color: white;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.inContainer {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+form label,form input, #startGameButton {
+	display: block;
+}
+form label {
+	font-size: 24px;
+	text-align: center;
+}
+form input, #startGameButton {
+	border-radius: 10px;
+	border: #2a3338 2px solid;
+	background: #473579;
+	margin: 0 auto;
+}
+form input {
+	padding: 5px 10px;
+}
+#startGameButton {
+	position: static;
+	font-size: 18px;
+	padding: 7px 15px;
+}
+#startGameButton:hover {
+	cursor: pointer;
+	border-color: white;
+}

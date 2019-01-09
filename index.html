@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet"/>
+  <script>
+  window.onload = function () {
+            document.querySelector('.loading-animation').style.display = "none";
+        };
+  </script>
+  <link rel="stylesheet" href="./src/screens/home/ladingPage.css">
+  <title>Monster Game</title>
+</head>
+<body>
+  <div class="loading-animation">
+    <div class="spinner"></div>
+  </div>
+  
+  <header class="content-wrapper">
+    <a href="" class="anchor-home" name="anchor-home"></a>
+    <nav class="navigation-game">
+      <a href="#anchor-home" class="link-navigation">Home</a>
+      <a href="#anchor-screen" class="link-navigation">ScreenShots</a>
+      <a href="#anchor-autors" class="link-navigation">Autors</a>
+      <a href="./src/screens/battle/index.html" class="link-navigation">Play</a>
+    </nav>
+    <h1 class="game-name">Monster Game</h1>
+    <p class="game-about">Resolve all task and win this game!</p>
+  </header>
+  <main class="content-wrapper">
+    <section class="screen-section">
+      <a name="anchor-screen"></a>
+      <h2 class="game-screen-head">The Screenshots Game</h2>
+      <div class="game-screen-content">
+        <img src="./src/screens/home/images/screenshots/screenshots1.png" alt="ScreenShots 1" class="game-screens">
+        <img src="./src/screens/home/images/screenshots/screenshots2.png" alt="ScreenShots 2" class="game-screens">
+        <img src="./src/screens/home/images/screenshots/screenshots3.png" alt="ScreenShots 3" class="game-screens">
+        <img src="./src/screens/home/images/screenshots/screenshots4.png" alt="ScreenShots 4" class="game-screens">
+        <img src="./src/screens/home/images/screenshots/screenshots5.png" alt="ScreenShots 5" class="game-screens">
+        <img src="./src/screens/home/images/screenshots/screenshots6.png" alt="ScreenShots 6" class="game-screens">
+      </div>
+    </section>
+    <section class="about-section">
+      <a name="anchor-autors"></a>
+      <h2 class="autors-head">Create by Igor Marusich and Kiryl Kireyeu</h2>
+      <div class="autors-container">
+        <div class="autor-igor">
+          <h2 class="autor-name">Igor</h2>
+          <p>Telegram: @LLITRIXKOD</p>
+          <p>E-mail: <a href="mailto:garik.marusich@gmail.com">garik.marusich@gmail.com</a></p>
+          <h3>Task:</h3>
+          <ul class="list-work">
+						<li>Webpack</li>
+						<li>Battle Window</li>
+						<li>Login Window</li>
+						<li>Create the monster and health with animation</li>
+						<li>Auto generation of monsters</li>
+						<li>Sound</li>
+						<li>Ability to play with keyboard keys</li>
+						<li>Integration</li>
+          </ul>
+        </div>
+        <div class="autor-kiryl">
+          <h2 class="autor-name">Kiryl</h2>
+          <p>Telegram: @kir_22</p>
+          <p>E-mail: <a href="mailto:kirill89kireew@gmail.com">kirill89kireew@gmail.com</a></p>
+          <h3>Task:</h3>
+          <ul class="list-work">
+						<li>Webpack</li>
+						<li>Landing page</li>
+						<li>Spell selection window</li>
+						<li>3 task screen</li>
+						<li>Implementation of tasks</li>
+            <li>Table of records</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

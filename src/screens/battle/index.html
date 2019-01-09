@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Battle</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Charm"
+      rel="stylesheet"
+    />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="form.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <form onclick="event.preventDefault()" id="form">
+        <div class="inContainer">
+					<label for="firstName">First name</label> 
+					<input type="firstName" id="firstName" autocomplete="off" placeholder="First Name" required>
+        </div>
+        <div class="inContainer">
+          <label for="lastName">Last name</label>
+          <input type="lastName" id="lastName" autocomplete="off" placeholder="Last Name" required/>
+        </div>
+        <div class="inContainer"><button id="startGameButton">Start Game</button></div>
+			</form>
+			
+			
+      <div class="main" style="display: none;">
+        <div class="roundInfo"></div>
+        <div class="nameLine">
+          <div class="nameBox" id="heroName"></div>
+          <div class="nameBox" id="monsterName"></div>
+        </div>
+        <div class="healthBlock">
+					<div class="health" id="leftHealth">
+						<h3><span id="heroHP">100</span> HP</h3>
+						<div class="strip" id="leftStrip"></div>
+					</div>
+					<div class="health" id="rightHealth">
+							<h3><span id="monsterHP">100</span> HP</h3>
+						<div class="strip" id="rightStrip"></div>
+					</div>
+        </div>
+        <button id="spell">
+					<h3>Perform a spell</h3>
+					<h5>(Press Enter)</h5>
+				</button>
+        <div class="canvasBox">
+          <canvas id="myCanvas" width="1200" height="350"></canvas>
+        </div>
+        <div class="modalWindow" style="display: none;"></div>
+      </div>
+		</main>
+    <script src="../../../dist/bundle.js"></script>
+  </body>
+</html>
